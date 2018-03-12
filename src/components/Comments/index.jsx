@@ -20,7 +20,7 @@ const Comments = ({TasksList, addComment}) => {
         </ul>
         <form className="new-post-form">
             <div className="new-post-form__img"></div>
-            <textarea onKeyDown={e => {
+            <textarea placeholder="Введите ваше сообщение..." onKeyDown={e => {
                 if (e.ctrlKey && e.keyCode === 13) {
                     addComment(commentTxt.value);
                         commentTxt.value = '';
